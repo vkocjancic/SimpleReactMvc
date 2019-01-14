@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Welcome</h1>
+    <div id="reactMessage">@Html.React("HelloText", new { })</div>
+</div>
+
+@section Scripts {
+    <script src="@Url.Content("~/js/Tutorial.jsx")"></script>
+    @Html.ReactInitJavaScript()
+}
